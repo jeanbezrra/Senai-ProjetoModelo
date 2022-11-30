@@ -41,7 +41,7 @@ namespace AppModelo.Controller.Seguranca
             var atualizouSenha = repositorio.AtualizarSenha(email, novaSenha);
             if(atualizouSenha is false)
             {
-                return "Houve um erro ao alterar sua senha no banco de dados. Ligar para zói -> (027) 99699-2689";
+                return "Houve um erro ao alterar sua senha no banco de dados. Ligar para noix -> (027) 99191-9080";
             }
 
             // 3º PASSO: MANDAR A NOVA SENHA PARA O E-MAIL

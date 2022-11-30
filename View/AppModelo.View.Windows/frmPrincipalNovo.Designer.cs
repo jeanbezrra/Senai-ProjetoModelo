@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnRelatorio);
             this.panel1.Controls.Add(this.btnConfiguracoes);
@@ -75,6 +75,7 @@
             // 
             // btnRelatorio
             // 
+            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnRelatorio.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRelatorio.FlatAppearance.BorderSize = 0;
             this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -87,7 +88,7 @@
             this.btnRelatorio.TabIndex = 6;
             this.btnRelatorio.Text = "Relatório";
             this.btnRelatorio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.UseVisualStyleBackColor = false;
             this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             this.btnRelatorio.Leave += new System.EventHandler(this.btnRelatorio_Leave);
             // 
@@ -111,6 +112,7 @@
             // 
             // btnNovaNacionalidade
             // 
+            this.btnNovaNacionalidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnNovaNacionalidade.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNovaNacionalidade.FlatAppearance.BorderSize = 0;
             this.btnNovaNacionalidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -123,12 +125,13 @@
             this.btnNovaNacionalidade.TabIndex = 3;
             this.btnNovaNacionalidade.Text = "Nacionalidade";
             this.btnNovaNacionalidade.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnNovaNacionalidade.UseVisualStyleBackColor = true;
+            this.btnNovaNacionalidade.UseVisualStyleBackColor = false;
             this.btnNovaNacionalidade.Click += new System.EventHandler(this.btnNovaNacionalidade_Click);
             this.btnNovaNacionalidade.Leave += new System.EventHandler(this.btnNovaNacionalidade_Leave);
             // 
             // btnNovaNaturalidade
             // 
+            this.btnNovaNaturalidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnNovaNaturalidade.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNovaNaturalidade.FlatAppearance.BorderSize = 0;
             this.btnNovaNaturalidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -141,12 +144,13 @@
             this.btnNovaNaturalidade.TabIndex = 2;
             this.btnNovaNaturalidade.Text = "Naturalidade";
             this.btnNovaNaturalidade.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnNovaNaturalidade.UseVisualStyleBackColor = true;
+            this.btnNovaNaturalidade.UseVisualStyleBackColor = false;
             this.btnNovaNaturalidade.Click += new System.EventHandler(this.btnNovaNaturalidade_Click);
             this.btnNovaNaturalidade.Leave += new System.EventHandler(this.btnNovaNaturalidade_Leave);
             // 
             // btnNovoFuncionario
             // 
+            this.btnNovoFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnNovoFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNovoFuncionario.FlatAppearance.BorderSize = 0;
             this.btnNovoFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -159,12 +163,13 @@
             this.btnNovoFuncionario.TabIndex = 1;
             this.btnNovoFuncionario.Text = "Funcionário";
             this.btnNovoFuncionario.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnNovoFuncionario.UseVisualStyleBackColor = true;
+            this.btnNovoFuncionario.UseVisualStyleBackColor = false;
             this.btnNovoFuncionario.Click += new System.EventHandler(this.btnNovoFuncionario_Click);
             this.btnNovoFuncionario.Leave += new System.EventHandler(this.btnNovoFuncionario_Leave);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblInfoUsuario);
             this.panel2.Controls.Add(this.lblNomeUsuario);
@@ -211,15 +216,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(51, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(59, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox1.Size = new System.Drawing.Size(63, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pnlPainelAberto
             // 
+            this.pnlPainelAberto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.pnlPainelAberto.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlPainelAberto.Location = new System.Drawing.Point(186, 100);
             this.pnlPainelAberto.Name = "pnlPainelAberto";
@@ -253,7 +259,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
             this.Controls.Add(this.btnFecharPrincipal);
             this.Controls.Add(this.lblTitulo);

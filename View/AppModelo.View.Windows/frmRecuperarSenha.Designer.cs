@@ -51,14 +51,14 @@
             // 
             // btnRecuperarAcesso
             // 
-            this.btnRecuperarAcesso.BackColor = System.Drawing.Color.Blue;
+            this.btnRecuperarAcesso.BackColor = System.Drawing.Color.Navy;
             this.btnRecuperarAcesso.FlatAppearance.BorderSize = 0;
             this.btnRecuperarAcesso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecuperarAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecuperarAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperarAcesso.ForeColor = System.Drawing.Color.White;
-            this.btnRecuperarAcesso.Location = new System.Drawing.Point(58, 225);
+            this.btnRecuperarAcesso.Location = new System.Drawing.Point(79, 234);
             this.btnRecuperarAcesso.Name = "btnRecuperarAcesso";
-            this.btnRecuperarAcesso.Size = new System.Drawing.Size(299, 41);
+            this.btnRecuperarAcesso.Size = new System.Drawing.Size(254, 39);
             this.btnRecuperarAcesso.TabIndex = 3;
             this.btnRecuperarAcesso.Text = "RECUPERAR ACESSO";
             this.btnRecuperarAcesso.UseVisualStyleBackColor = false;
@@ -86,10 +86,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(53, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 25);
+            this.label3.Size = new System.Drawing.Size(54, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "E-mail";
             // 
@@ -97,13 +97,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Historic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Swis721 BlkEx BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(74, 36);
+            this.label1.Location = new System.Drawing.Point(44, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 30);
+            this.label1.Size = new System.Drawing.Size(319, 22);
             this.label1.TabIndex = 7;
             this.label1.Text = "Recuperação de senha";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 

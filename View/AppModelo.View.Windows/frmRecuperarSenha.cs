@@ -56,5 +56,10 @@ namespace AppModelo.View.Windows
             btnCancelar.BackColor = Color.FromArgb(255, 255, 255);
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

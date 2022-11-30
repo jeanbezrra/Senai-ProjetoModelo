@@ -84,5 +84,15 @@ namespace AppModelo.View.Windows
         {
             btnFechar.BackColor = Color.White;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
