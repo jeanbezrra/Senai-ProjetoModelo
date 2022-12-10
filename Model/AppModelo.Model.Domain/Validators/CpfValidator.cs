@@ -2,6 +2,12 @@
 {
     public static partial class Validadores
     {
+        
+        /// <summary>
+        /// Validação genérica de cpf.
+        /// </summary>
+        /// 
+
         public struct Cpf
         {
             private readonly string _value;

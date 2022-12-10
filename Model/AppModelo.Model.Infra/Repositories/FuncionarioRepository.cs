@@ -9,11 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AppModelo.Model.Infra.Repositories
-{
+{    /// <summary>
+    /// Responsavel pela conexão do banco de dados com o programa.
+    /// </summary>
+    /// 
+
+
     public class FuncionarioRepository
     {
         public bool Inserir(string nome, DateTime dataNascimento, bool sexo, string email, string telefone, string telefoneContato, string cep, string logradouro, int numero, string complemento, string bairro, string municipio, string uf, int nacionalidade, int naturalidade, string cpf)
         {
+
             var dataConvertida = dataNascimento.ToString("yyyy-MM-dd");
 
             var sql = $"INSERT INTO funcionarios (nome_completo, data_nascimento, sexo, email, telefone, telefone_contato, cep, logradouro, numero, complemento, bairro, municipio, uf, fk_nacionalidade, fk_naturalidade, cpf) VALUES ('{nome}', '{dataConvertida}', {sexo}, '{email}', '{telefone}', '{telefoneContato}', '{cep}', '{logradouro}', {numero}, '{complemento}', '{bairro}', '{municipio}', '{uf}', {nacionalidade}, {naturalidade}, '{cpf}')";
@@ -24,6 +30,13 @@ namespace AppModelo.Model.Infra.Repositories
 
         public IEnumerable<FuncionarioEntity> ObterTodos()
         {
+            /// <summary>
+            /// Obtêm todos os funcionarios existentes no banco de dados.
+            /// </summary>
+            /// <returns>Retorna a requisição feita de obter todos os funcionários existentes</returns>
+            /// 
+
+
             var sql = $"SELECT * FROM funcionarios";
             using IDbConnection conexaoBd = new MySqlConnection(Databases.MySql.ConnectionString());
             var resultado = conexaoBd.Query<FuncionarioEntity>(sql);

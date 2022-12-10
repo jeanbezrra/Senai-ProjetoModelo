@@ -8,6 +8,16 @@ namespace AppModelo.Model.Domain.Entities
 {
     public class FuncionarioEntity
     {
+        /// <summary>
+        /// 
+        /// Remove o funcionário digitado.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <returns>Retorna a requsisição feita para remover o funcionário pelo id</returns>
+
+
+
         public int Id { get; set; }
         public string Nome_Completo { get; set; }
         public DateTime Data_Nascimento { get; set; }

@@ -9,8 +9,23 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace AppModelo.Model.Infra.Repositories
 {
+
+    /// <summary>
+    /// Responsavel pela conexão do banco de dados com o programa.
+    /// </summary>
+    /// 
+
     public class NaturalidadeRepository
     {
+        7/// <summary>
+        /// Inseri uma naturalidade no banco de dados.
+        /// </summary>
+        /// <param name="descricao"></param>
+        /// <param name="status"></param>
+        /// <returns>Retorna a requisição feita de inserir a naturalidade pela descrição e seu status</returns>
+      
+
+
         public bool Inserir(string descricao, bool status)
         {
             var agora = DateTime.Now.ToString("u");
@@ -38,6 +53,16 @@ namespace AppModelo.Model.Infra.Repositories
 
         public bool Atualizar(int id, string descricao)
         {
+
+            /// <summary>
+            /// Atualiza uma naturalidade existente no banco de dados pelo id.
+            /// </summary>
+            /// <param name="descricao"></param>
+            /// <param name="id"></param>
+            /// <returns>Retorna a requisição feita de atualizar a descrição pelo id</returns>
+
+
+
             var sql = $"UPDATE naturalidades SET descricao = '{descricao}' WHERE id = {id}";
             using IDbConnection conexaoBd = new MySqlConnection(Databases.MySql.ConnectionString());
             var resultado = conexaoBd.Execute(sql);
@@ -46,6 +71,13 @@ namespace AppModelo.Model.Infra.Repositories
 
         public bool Deletar(int id)
         {
+            /// <summary>
+            /// Remove uma naturalidade existente no banco de dados pelo id.
+            /// </summary>
+            /// <param name="id"></param>
+            /// <returns>Retorna a requisição feita de deletar a naturalidade pelo id</returns>
+
+
             var sql = $"DELETE FROM naturalidades WHERE id = '{id}'";
             using IDbConnection conexaoBd = new MySqlConnection(Databases.MySql.ConnectionString());
             var resultado = conexaoBd.Execute(sql);
